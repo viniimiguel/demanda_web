@@ -7,7 +7,8 @@
 body{
     height: 100vh;
     background-color: #000;
-    background-image: url('https://img.freepik.com/fotos-gratis/agua-da-chuva-em-um-macro-verde-da-folha_1150-12802.jpg?w=826&t=st=1710361897~exp=1710362497~hmac=75b17efc52c456efd7a42fefe902675df5396ff486243684076e48786d05a07b');
+    background-image: url('');
+    background-image: url('https://br.freepik.com/fotos-premium/vista-baixa-da-mao-do-empresario-assinando-documento-juridico-ou-seguro-ou-contrato-comercial-na-mesa-preta-com-reflexao_15458137.htm#fromView=search&page=1&position=50&uuid=dc43656f-0836-4de0-97a0-1e067dd226ee');
     background-size: cover;
     background-position: center;
 }
@@ -69,6 +70,38 @@ header{
 .action_btn:active{
     scale: 0.95;
 }
+/* dropdown menu */
+
+.dropdown_menu{
+    position: absolute;
+    right: 2em;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+
+}
+
 
 /* responsive */
 
